@@ -1,4 +1,12 @@
 <div id="notes" class="azureBlueBackground azureBorderThin">
-  {{input}}
-  <button class="btn btn-default btn-xs">New Note</button>
+  {{input valueBinding="newNoteName"}}
+  <button class="btn btn-default btn-xs" {{action "createNewNote"}}>New Note</button>
+
+  <div class="list-group" style="margin-top: 10px;">
+    {{#each controller}}
+      <div class="list-group-item">
+        {{name}}
+      </div>
+    {{/each}}
+  </div>
 </div>
