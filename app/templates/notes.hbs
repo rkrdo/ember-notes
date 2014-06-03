@@ -5,8 +5,13 @@
   <div class="list-group" style="margin-top: 10px;">
     {{#each controller}}
       <div class="list-group-item">
-        {{name}}
+        {{#link-to "notes.note" this}}
+          {{name}}
+        {{/link-to}}
       </div>
     {{/each}}
   </div>
+
 </div>
+
+{{outlet}}
