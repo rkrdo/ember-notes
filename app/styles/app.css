@@ -43,7 +43,7 @@ body {
 }
 
 #selectedNote textarea {
-    background: url('../notebook.png') repeat-y;
+    background: url('/assets/images/notebook.png') repeat-y;
     width: 80%;
     height: 80%;
     font: normal 14px verdana;
