@@ -4,11 +4,9 @@
 
   <div class="list-group" style="margin-top: 10px;">
     {{#each controller}}
-      <div class="list-group-item">
-        {{#link-to "notes.note" this}}
-          {{name}}
-        {{/link-to}}
-      </div>
+      {{#link-to "notes.note" this class='list-group-item'}}
+        {{name}}
+      {{/link-to}}
     {{/each}}
   </div>
 
