@@ -30,5 +30,12 @@ app.import('vendor/ic-ajax/dist/named-amd/main.js', {
   ]
 });
 
+// Importing bootstrap
+app.import('vendor/bootstrap/dist/css/bootstrap.min.css');
+app.import('vendor/bootstrap/dist/js/bootstrap.min.js');
+
+// Localstorage
+app.import('vendor/ember-localstorage-adapter/localstorage_adapter.js');
+
 
 module.exports = app.toTree();
