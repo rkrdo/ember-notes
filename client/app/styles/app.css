@@ -19,7 +19,7 @@ body {
     position: absolute;
     left: 10px;
     width: 230px;
-    top: 10px;
+    top: 65px;
     bottom:10px;
     overflow: scroll;
     padding: 10px;
@@ -30,7 +30,7 @@ body {
     position: absolute;
     left: 270px;
     right: 10px;
-    top: 10px;
+    top: 65px;
     bottom: 10px;
     border: 1px solid #cdd0d4;
     border-radius: 8px;
@@ -128,4 +128,8 @@ body {
 .is-selected {
     background: #0088cc;
     color: #f1f4ee;
+}
+
+.notes-navbar {
+  background-color: aliceBlue;
 }
