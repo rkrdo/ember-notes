@@ -1,6 +1,8 @@
 {
   "predef": {
     "document": true,
+    "alert": true,
+    "console": true,
     "window": true,
     "location": true,
     "setTimeout": true,
