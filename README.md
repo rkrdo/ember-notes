@@ -5,6 +5,7 @@
 How to use:
 
 `cd client/` and run `npm install` and `bower install` to install dependencies
+
 run `ember server` and go to `http://localhost:4200`
 
 TODO:
