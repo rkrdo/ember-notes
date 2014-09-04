@@ -10,7 +10,7 @@
     "Em": true,
     "DS": true,
     "$": true,
-    "ENV": true,
+    "NotesENV": true,
     "module": true
   },
   "node" : false,

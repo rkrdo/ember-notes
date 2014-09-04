@@ -1,24 +1,24 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <title>Ember.js Chapter 1 - Notes</title>
+    <title>Notes</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     {{BASE_TAG}}
 
-    <!--importing vendor libraries-->
     <link rel="stylesheet" href="assets/vendor.css">
     <link rel="stylesheet" href="assets/notes.css">
   </head>
   <body>
-    <script>
-      window.ENV = {{ENV}};
-    </script>
+    <script src="assets/vendor.js"></script>
     <script src="assets/notes.js"></script>
     <script>
-      window.Notes = require('notes/app')['default'].create(ENV.APP);
+      window.NotesENV = require('notes/config/environment')['default'];
+      window.EmberENV = window.NotesENV.EmberENV;
+      window.Notes = require('notes/app')['default'].create(NotesENV.APP);
     </script>
   </body>
 </html>
