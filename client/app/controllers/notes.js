@@ -1,6 +1,7 @@
 var NotesController = Ember.ArrayController.extend({
   needs: ['notes/note'],
   newNoteName: null,
+  selectedNoteBinding: 'controllers.notes/note.model',
 
   actions: {
     createNewNote: function() {
